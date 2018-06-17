@@ -1,0 +1,53 @@
+\usepackage{fancyhdr}
+\usepackage{luatextra}
+\usepackage{unicode-math}
+\usepackage{libertine}
+\setmainfont[Ligatures=TeX]{Linux Libertine O}
+\setmathfont[Scale=MatchUppercase]{libertinusmath-regular.otf}
+\setmonofont[Extension=.ttf,Path=/Users/zFur/Library/Fonts/,UprightFont=*-Regular,ItalicFont=*-MediumIt,BoldFont=*-Bold,Scale=0.86]{SourceCodePro}
+\newcommand{\meta}[1]{{\normalfont\textlangle\textsl{#1}\textrangle}}
+\usepackage{ifthen}
+\usepackage{fontspec}
+\usepackage{varioref}
+\usepackage{amssymb,amsmath,amsfonts}
+\usepackage[font={small,sf}]{caption}
+\usepackage{graphicx,grffile}
+\usepackage{keyval}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.5}
+\usepackage{parskip}
+\usepackage[binary-units,exponent-product=\cdot ]{siunitx}
+\usepackage{imakeidx}
+\usepackage{textcomp}
+\setlength{\parindent}{0.0cm}
+\usepackage{titling}
+\pretitle{\begin{center}\Huge\bfseries\sffamily}
+\posttitle{\par\end{center}\vskip 3.5em}
+\preauthor{\begin{center}\normalsize\sffamily\lineskip 0.5em \begin{tabular}[t]{c}}
+\postauthor{\end{tabular}\par\end{center}}
+\predate{\begin{center}\footnotesize\sffamily}
+\postdate{\par\end{center}}
+\usepackage[noindentafter]{titlesec}
+\titleformat{\part}[display]{\centering\normalfont\sffamily\huge\bfseries}{\partname\ \thepart}{20pt}{\Huge}
+\titleformat{\chapter}[display]{\normalfont\sffamily\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}{\normalfont\sffamily\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\sffamily\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\sffamily\bfseries}{\thesubsubsection}{0.7em}{}
+\titleformat{\subsubsubsection}{\normalfont\sffamily\bfseries}{\thesubsubsubsection}{0.5em}{}
+\usepackage[most]{tcolorbox}
+\newtcolorbox[blend into=figures]{figura}[2]{float=htb,title=#2,#1}
+\lstset{basicstyle=\ttfamily,columns=fixed,breaklines=true,postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space},showstringspaces=false}
+\lstset{moredelim=[is][\sffamily\itshape\color{gray}]{¨}{¨}}
+\lstdefinestyle{normal}{basicstyle=\ttfamily,columns=fixed,breaklines=true,postbreak=\mbox{\textcolor{gray}{$\hookrightarrow$}\space},moredelim=[is][\sffamily\itshape\color{gray}]{¨}{¨},showstringspaces=false}
+\lstdefinelanguage{bash}{style=normal}
+\lstdefinelanguage{sql}{style=normal}
+\lstdefinelanguage{xml}{style=normal}
+\lstdefinelanguage{python}{style=normal}
+\lstdefinelanguage{javascript}{style=normal}
+\lstdefinelanguage{latex}{style=normal}
+\lstdefinelanguage{viml}{style=normal}
+
